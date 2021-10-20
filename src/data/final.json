@@ -1,0 +1,767 @@
+{
+  "AF": {
+    "country": "Afghanistan",
+    "currency_code": "AFN",
+    "PPP": 18.7083026643547
+  },
+  "AL": {
+    "country": "Albania",
+    "currency_code": "ALL",
+    "PPP": 41.0080839123463
+  },
+  "DZ": {
+    "country": "Algeria",
+    "currency_code": "DZD",
+    "PPP": 37.2444410155099
+  },
+  "AO": {
+    "country": "Angola",
+    "currency_code": "AOA",
+    "PPP": 167.661424860235
+  },
+  "AR": {
+    "country": "Argentina",
+    "currency_code": "ARS",
+    "PPP": 28.673796809428
+  },
+  "AM": {
+    "country": "Armenia",
+    "currency_code": "AMD",
+    "PPP": 157.090996811345
+  },
+  "AU": {
+    "country": "Australia",
+    "currency_code": "AUD",
+    "PPP": 1.471741
+  },
+  "AT": {
+    "country": "Austria",
+    "currency_code": "EUR",
+    "PPP": 0.764401
+  },
+  "AZ": {
+    "country": "Azerbaijan",
+    "currency_code": "AZN",
+    "PPP": 0.495733279401021
+  },
+  "BS": {
+    "country": "Bahamas",
+    "currency_code": "BSD",
+    "PPP": 0.881503545243154
+  },
+  "BH": {
+    "country": "Bahrain",
+    "currency_code": "BHD",
+    "PPP": 0.176747330295103
+  },
+  "BD": {
+    "country": "Bangladesh",
+    "currency_code": "BDT",
+    "PPP": 32.8088089011859
+  },
+  "BY": {
+    "country": "Belarus",
+    "currency_code": "BYR",
+    "PPP": 0.774310140253525
+  },
+  "BE": {
+    "country": "Belgium",
+    "currency_code": "EUR",
+    "PPP": 0.75128
+  },
+  "BJ": {
+    "country": "Benin",
+    "currency_code": "XOF",
+    "PPP": 211.974456645694
+  },
+  "BT": {
+    "country": "Bhutan",
+    "currency_code": "INR",
+    "PPP": 20.1060013772947
+  },
+  "BO": {
+    "country": "Bolivia",
+    "currency_code": "BOB",
+    "PPP": 2.59562509656126
+  },
+  "BW": {
+    "country": "Botswana",
+    "currency_code": "BWP",
+    "PPP": 4.54365256233122
+  },
+  "BR": {
+    "country": "Brazil",
+    "currency_code": "BRL",
+    "PPP": 2.36170285287039
+  },
+  "BN": {
+    "country": "Brunei",
+    "currency_code": "BND",
+    "PPP": 0.577129625133251
+  },
+  "BG": {
+    "country": "Bulgaria",
+    "currency_code": "BGN",
+    "PPP": 0.702638963121325
+  },
+  "BF": {
+    "country": "Burkina Faso",
+    "currency_code": "XOF",
+    "PPP": 209.844716178521
+  },
+  "BI": {
+    "country": "Burundi",
+    "currency_code": "BIF",
+    "PPP": 680.412791588898
+  },
+  "CV": {
+    "country": "Cape Verde",
+    "currency_code": "CVE",
+    "PPP": 46.5120259292009
+  },
+  "KH": {
+    "country": "Cambodia",
+    "currency_code": "KHR",
+    "PPP": 1400.09106466151
+  },
+  "CM": {
+    "country": "Cameroon",
+    "currency_code": "XAF",
+    "PPP": 228.750689579341
+  },
+  "CA": {
+    "country": "Canada",
+    "currency_code": "CAD",
+    "PPP": 1.206376
+  },
+  "CF": {
+    "country": "Central African Republic",
+    "currency_code": "XAF",
+    "PPP": 280.18943591303
+  },
+  "TD": {
+    "country": "Chad",
+    "currency_code": "XAF",
+    "PPP": 220.58270732072
+  },
+  "CL": {
+    "country": "Chile",
+    "currency_code": "CLP",
+    "PPP": 418.432299
+  },
+  "CN": {
+    "country": "China",
+    "currency_code": "CNY",
+    "PPP": 4.18560182367734
+  },
+  "CO": {
+    "country": "Colombia",
+    "currency_code": "COP",
+    "PPP": 1352.785587
+  },
+  "KM": {
+    "country": "Comoros",
+    "currency_code": "KMF",
+    "PPP": 182.341118464793
+  },
+  "CD": {
+    "country": "The Democratic Republic of Congo",
+    "currency_code": "CDF",
+    "PPP": 911.270275072179
+  },
+  "CG": {
+    "country": "Congo",
+    "currency_code": "XAF",
+    "PPP": 312.038484027859
+  },
+  "CR": {
+    "country": "Costa Rica",
+    "currency_code": "CRC",
+    "PPP": 335.859688
+  },
+  "CI": {
+    "country": "Ivory Coast",
+    "currency_code": "XOF",
+    "PPP": 245.25393273356
+  },
+  "CY": {
+    "country": "Cyprus",
+    "currency_code": "EUR",
+    "PPP": 0.606090326028862
+  },
+  "CZ": {
+    "country": "Czech Republic",
+    "currency_code": "CZK",
+    "PPP": 12.658097
+  },
+  "DK": {
+    "country": "Denmark",
+    "currency_code": "DKK",
+    "PPP": 6.597435
+  },
+  "DJ": {
+    "country": "Djibouti",
+    "currency_code": "DJF",
+    "PPP": 105.286894813428
+  },
+  "DO": {
+    "country": "Dominican Republic",
+    "currency_code": "DOP",
+    "PPP": 22.9044585558641
+  },
+  "EG": {
+    "country": "Egypt",
+    "currency_code": "EGP",
+    "PPP": 4.51090123519829
+  },
+  "SV": {
+    "country": "El Salvador",
+    "currency_code": "SVC",
+    "PPP": 0.446952641642754
+  },
+  "GQ": {
+    "country": "Equatorial Guinea",
+    "currency_code": "XAF",
+    "PPP": 229.162855838159
+  },
+  "EE": {
+    "country": "Estonia",
+    "currency_code": "EUR",
+    "PPP": 0.531582
+  },
+  "SZ": {
+    "country": "Swaziland",
+    "currency_code": "SZL",
+    "PPP": 6.35749804558733
+  },
+  "ET": {
+    "country": "Ethiopia",
+    "currency_code": "ETB",
+    "PPP": 12.113896521832
+  },
+  "FJ": {
+    "country": "Fiji Islands",
+    "currency_code": "FJD",
+    "PPP": 0.912566867683509
+  },
+  "FI": {
+    "country": "Finland",
+    "currency_code": "EUR",
+    "PPP": 0.840403
+  },
+  "FR": {
+    "country": "France",
+    "currency_code": "EUR",
+    "PPP": 0.731532
+  },
+  "GA": {
+    "country": "Gabon",
+    "currency_code": "XAF",
+    "PPP": 265.458617341118
+  },
+  "GM": {
+    "country": "Gambia",
+    "currency_code": "GMD",
+    "PPP": 17.7926581364134
+  },
+  "GE": {
+    "country": "Georgia",
+    "currency_code": "GEL",
+    "PPP": 0.895038860973777
+  },
+  "DE": {
+    "country": "Germany",
+    "currency_code": "EUR",
+    "PPP": 0.745541
+  },
+  "GH": {
+    "country": "Ghana",
+    "currency_code": "GHS",
+    "PPP": 2.32828204964075
+  },
+  "GR": {
+    "country": "Greece",
+    "currency_code": "EUR",
+    "PPP": 0.543695
+  },
+  "GN": {
+    "country": "Guinea",
+    "currency_code": "GNF",
+    "PPP": 4053.63713733555
+  },
+  "GY": {
+    "country": "Guyana",
+    "currency_code": "GYD",
+    "PPP": 73.5983246746247
+  },
+  "HT": {
+    "country": "Haiti",
+    "currency_code": "HTG",
+    "PPP": 40.2000385792569
+  },
+  "HN": {
+    "country": "Honduras",
+    "currency_code": "HNL",
+    "PPP": 10.9098473493921
+  },
+  "HK": {
+    "country": "Hong Kong",
+    "currency_code": "HKD",
+    "PPP": 6.06613103645133
+  },
+  "HU": {
+    "country": "Hungary",
+    "currency_code": "HUF",
+    "PPP": 148.013252
+  },
+  "IS": {
+    "country": "Iceland",
+    "currency_code": "ISK",
+    "PPP": 145.342056
+  },
+  "IN": {
+    "country": "India",
+    "currency_code": "INR",
+    "PPP": 21.9895584423356
+  },
+  "ID": {
+    "country": "Indonesia",
+    "currency_code": "IDR",
+    "PPP": 4673.64938053127
+  },
+  "IR": {
+    "country": "Iran",
+    "currency_code": "IRR",
+    "PPP": 30007.6352318909
+  },
+  "IQ": {
+    "country": "Iraq",
+    "currency_code": "IQD",
+    "PPP": 507.575812599694
+  },
+  "IE": {
+    "country": "Ireland",
+    "currency_code": "EUR",
+    "PPP": 0.783858
+  },
+  "IL": {
+    "country": "Israel",
+    "currency_code": "ILS",
+    "PPP": 3.586796
+  },
+  "IT": {
+    "country": "Italy",
+    "currency_code": "EUR",
+    "PPP": 0.662828
+  },
+  "JM": {
+    "country": "Jamaica",
+    "currency_code": "JMD",
+    "PPP": 72.0311713172051
+  },
+  "JP": {
+    "country": "Japan",
+    "currency_code": "JPY",
+    "PPP": 102.835436
+  },
+  "JO": {
+    "country": "Jordan",
+    "currency_code": "JOD",
+    "PPP": 0.293633834668852
+  },
+  "KZ": {
+    "country": "Kazakhstan",
+    "currency_code": "KZT",
+    "PPP": 139.910344419856
+  },
+  "KE": {
+    "country": "Kenya",
+    "currency_code": "KES",
+    "PPP": 43.9510033037306
+  },
+  "KI": {
+    "country": "Kiribati",
+    "currency_code": "AUD",
+    "PPP": 1.00418067162645
+  },
+  "KR": {
+    "country": "South Korea",
+    "currency_code": "KRW",
+    "PPP": 861.823593
+  },
+  "KG": {
+    "country": "Kyrgyzstan",
+    "currency_code": "KGS",
+    "PPP": 18.2826193512474
+  },
+  "LA": {
+    "country": "Laos",
+    "currency_code": "LAK",
+    "PPP": 2889.35604537786
+  },
+  "LB": {
+    "country": "Lebanon",
+    "currency_code": "LBP",
+    "PPP": 1414.91186377546
+  },
+  "LS": {
+    "country": "Lesotho",
+    "currency_code": "LSL",
+    "PPP": 5.89733707181287
+  },
+  "LR": {
+    "country": "Liberia",
+    "currency_code": "LRD",
+    "PPP": 0.40839945200425
+  },
+  "LY": {
+    "country": "Libya",
+    "currency_code": "LYD",
+    "PPP": 0.476814861368455
+  },
+  "LU": {
+    "country": "Luxembourg",
+    "currency_code": "EUR",
+    "PPP": 0.857118
+  },
+  "MO": {
+    "country": "Macao",
+    "currency_code": "MOP",
+    "PPP": 5.17888955555227
+  },
+  "MW": {
+    "country": "Malawi",
+    "currency_code": "MWK",
+    "PPP": 298.819013185784
+  },
+  "MY": {
+    "country": "Malaysia",
+    "currency_code": "MYR",
+    "PPP": 1.56789792431483
+  },
+  "MV": {
+    "country": "Maldives",
+    "currency_code": "MVR",
+    "PPP": 8.34648954216387
+  },
+  "ML": {
+    "country": "Mali",
+    "currency_code": "XOF",
+    "PPP": 211.408305489815
+  },
+  "MT": {
+    "country": "Malta",
+    "currency_code": "EUR",
+    "PPP": 0.57253607696419
+  },
+  "MU": {
+    "country": "Mauritius",
+    "currency_code": "MUR",
+    "PPP": 16.5188606248614
+  },
+  "MX": {
+    "country": "Mexico",
+    "currency_code": "MXN",
+    "PPP": 9.522285
+  },
+  "MD": {
+    "country": "Moldova",
+    "currency_code": "MDL",
+    "PPP": 6.06280752222673
+  },
+  "MN": {
+    "country": "Mongolia",
+    "currency_code": "MNT",
+    "PPP": 931.667322635991
+  },
+  "MA": {
+    "country": "Morocco",
+    "currency_code": "MAD",
+    "PPP": 3.91688886324058
+  },
+  "MZ": {
+    "country": "Mozambique",
+    "currency_code": "MZN",
+    "PPP": 24.0505514545614
+  },
+  "MM": {
+    "country": "Myanmar",
+    "currency_code": "MMK",
+    "PPP": 417.352763717154
+  },
+  "NA": {
+    "country": "Namibia",
+    "currency_code": "NAD",
+    "PPP": 7.39645731989613
+  },
+  "NP": {
+    "country": "Nepal",
+    "currency_code": "NPR",
+    "PPP": 33.515679579846
+  },
+  "NL": {
+    "country": "Netherlands",
+    "currency_code": "EUR",
+    "PPP": 0.773146
+  },
+  "NZ": {
+    "country": "New Zealand",
+    "currency_code": "NZD",
+    "PPP": 1.445397
+  },
+  "NI": {
+    "country": "Nicaragua",
+    "currency_code": "NIO",
+    "PPP": 11.7467405449661
+  },
+  "NE": {
+    "country": "Niger",
+    "currency_code": "XOF",
+    "PPP": 257.595688961446
+  },
+  "NG": {
+    "country": "Nigeria",
+    "currency_code": "NGN",
+    "PPP": 144.270389598563
+  },
+  "MK": {
+    "country": "North Macedonia",
+    "currency_code": "MKD",
+    "PPP": 18.8293693212186
+  },
+  "NO": {
+    "country": "Norway",
+    "currency_code": "NOK",
+    "PPP": 10.026168
+  },
+  "PK": {
+    "country": "Pakistan",
+    "currency_code": "PKR",
+    "PPP": 38.7358748529272
+  },
+  "PA": {
+    "country": "Panama",
+    "currency_code": "PAB",
+    "PPP": 0.458215902412944
+  },
+  "PG": {
+    "country": "Papua New Guinea",
+    "currency_code": "PGK",
+    "PPP": 2.10856179493226
+  },
+  "PY": {
+    "country": "Paraguay",
+    "currency_code": "PYG",
+    "PPP": 2575.54426176557
+  },
+  "PE": {
+    "country": "Peru",
+    "currency_code": "PEN",
+    "PPP": 1.80254134326937
+  },
+  "PH": {
+    "country": "Philippines",
+    "currency_code": "PHP",
+    "PPP": 19.510674513951
+  },
+  "PL": {
+    "country": "Poland",
+    "currency_code": "PLN",
+    "PPP": 1.781862
+  },
+  "PT": {
+    "country": "Portugal",
+    "currency_code": "EUR",
+    "PPP": 0.569524
+  },
+  "PR": {
+    "country": "Puerto Rico",
+    "currency_code": "USD",
+    "PPP": 0.915292482712719
+  },
+  "QA": {
+    "country": "Qatar",
+    "currency_code": "QAR",
+    "PPP": 2.05597269589474
+  },
+  "RO": {
+    "country": "Romania",
+    "currency_code": "RON",
+    "PPP": 1.71324826296098
+  },
+  "RU": {
+    "country": "Russian Federation",
+    "currency_code": "RUB",
+    "PPP": 25.880788
+  },
+  "RW": {
+    "country": "Rwanda",
+    "currency_code": "RWF",
+    "PPP": 339.883004166603
+  },
+  "ST": {
+    "country": "Sao Tome and Principe",
+    "currency_code": "STD",
+    "PPP": 10.939603829365
+  },
+  "SA": {
+    "country": "Saudi Arabia",
+    "currency_code": "SAR",
+    "PPP": 1.61269682498785
+  },
+  "SN": {
+    "country": "Senegal",
+    "currency_code": "XOF",
+    "PPP": 245.979903418794
+  },
+  "RS": {
+    "country": "Serbia",
+    "currency_code": "RSD",
+    "PPP": 41.1258017103153
+  },
+  "SC": {
+    "country": "Seychelles",
+    "currency_code": "SCR",
+    "PPP": 7.82427063631569
+  },
+  "SL": {
+    "country": "Sierra Leone",
+    "currency_code": "SLL",
+    "PPP": 2739.26099735617
+  },
+  "SG": {
+    "country": "Singapore",
+    "currency_code": "SGD",
+    "PPP": 0.837372844795948
+  },
+  "SK": {
+    "country": "Slovakia",
+    "currency_code": "EUR",
+    "PPP": 0.526884
+  },
+  "SI": {
+    "country": "Slovenia",
+    "currency_code": "EUR",
+    "PPP": 0.556785
+  },
+  "SO": {
+    "country": "Somalia",
+    "currency_code": "SOS",
+    "PPP": 9107.77926165411
+  },
+  "ZA": {
+    "country": "South Africa",
+    "currency_code": "ZAR",
+    "PPP": 6.93343759272557
+  },
+  "ES": {
+    "country": "Spain",
+    "currency_code": "EUR",
+    "PPP": 0.617946
+  },
+  "LK": {
+    "country": "Sri Lanka",
+    "currency_code": "LKR",
+    "PPP": 51.6510128772592
+  },
+  "SD": {
+    "country": "Sudan",
+    "currency_code": "SDG",
+    "PPP": 21.8500415134625
+  },
+  "SR": {
+    "country": "Suriname",
+    "currency_code": "SRD",
+    "PPP": 3.55132817300668
+  },
+  "SE": {
+    "country": "Sweden",
+    "currency_code": "SEK",
+    "PPP": 8.765112
+  },
+  "CH": {
+    "country": "Switzerland",
+    "currency_code": "CHF",
+    "PPP": 1.139488
+  },
+  "TJ": {
+    "country": "Tajikistan",
+    "currency_code": "TJS",
+    "PPP": 2.2983279376576
+  },
+  "TZ": {
+    "country": "Tanzania",
+    "currency_code": "TZS",
+    "PPP": 888.320538673049
+  },
+  "TH": {
+    "country": "Thailand",
+    "currency_code": "THB",
+    "PPP": 12.3365620676861
+  },
+  "TG": {
+    "country": "Togo",
+    "currency_code": "XOF",
+    "PPP": 236.834542167973
+  },
+  "TT": {
+    "country": "Trinidad and Tobago",
+    "currency_code": "TTD",
+    "PPP": 4.14919066364467
+  },
+  "TN": {
+    "country": "Tunisia",
+    "currency_code": "TND",
+    "PPP": 0.909435238136089
+  },
+  "TR": {
+    "country": "Turkey",
+    "currency_code": "TRY",
+    "PPP": 2.128511
+  },
+  "TC": {
+    "country": "Turks and Caicos Islands",
+    "currency_code": "USD",
+    "PPP": 1.07171753339853
+  },
+  "TV": {
+    "country": "Tuvalu",
+    "currency_code": "AUD",
+    "PPP": 1.29379979942533
+  },
+  "UG": {
+    "country": "Uganda",
+    "currency_code": "UGX",
+    "PPP": 1321.34594445177
+  },
+  "UA": {
+    "country": "Ukraine",
+    "currency_code": "UAH",
+    "PPP": 7.69479444776784
+  },
+  "GB": {
+    "country": "United Kingdom",
+    "currency_code": "GBP",
+    "PPP": 0.699569
+  },
+  "US": {
+    "country": "United States",
+    "currency_code": "USD",
+    "PPP": 1
+  },
+  "UZ": {
+    "country": "Uzbekistan",
+    "currency_code": "UZS",
+    "PPP": 2297.17215078586
+  },
+  "VN": {
+    "country": "Vietnam",
+    "currency_code": "VND",
+    "PPP": 7473.66785866123
+  },
+  "PS": {
+    "country": "Palestine",
+    "currency_code": "ILS",
+    "PPP": 0.569344009142999
+  }
+}
