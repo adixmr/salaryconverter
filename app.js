@@ -1,4 +1,4 @@
-require('dotenv')
+require('dotenv').config()
 const app = require('express')()
 
 app.use('/api', require('./src/routes/api'))

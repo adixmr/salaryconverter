@@ -1,4 +1,9 @@
 {
+  "IN": {
+    "country": "India",
+    "currency_code": "INR",
+    "PPP": 21.9895584423356
+  },
   "AF": {
     "country": "Afghanistan",
     "currency_code": "AFN",
@@ -319,11 +324,6 @@
     "currency_code": "ISK",
     "PPP": 145.342056
   },
-  "IN": {
-    "country": "India",
-    "currency_code": "INR",
-    "PPP": 21.9895584423356
-  },
   "ID": {
     "country": "Indonesia",
     "currency_code": "IDR",
@@ -538,6 +538,11 @@
     "country": "Pakistan",
     "currency_code": "PKR",
     "PPP": 38.7358748529272
+  },
+  "PS": {
+    "country": "Palestine",
+    "currency_code": "ILS",
+    "PPP": 0.569344009142999
   },
   "PA": {
     "country": "Panama",
@@ -758,10 +763,5 @@
     "country": "Vietnam",
     "currency_code": "VND",
     "PPP": 7473.66785866123
-  },
-  "PS": {
-    "country": "Palestine",
-    "currency_code": "ILS",
-    "PPP": 0.569344009142999
   }
 }

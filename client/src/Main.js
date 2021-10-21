@@ -1,8 +1,28 @@
+import { useState, useEffect } from 'react';
 const axios = require('axios')
 
-function Main(){
+const Main = () => {
+    const [countries, setCountries] = useState({})
+    const [from, setFrom] = useState('IN')
+    const [to, setTo] = useState('US')
+    const [salary, setSalary] = useState('100000')
+    const [data, setData] = useState({})
+
+    useEffect(() => {
+        const fetchData = async () => {
+            let countries = await axios.get('/list')
+            let data = await axios.get('/api/'+from+'/'+to)
+            setCountries(countries.data)
+            setData(data.data)
+            console.log(data)
+        }
+        
+        fetchData();
+    }, [from, to]); 
+
+
+
     return (
-        <>
         <div className="jumbotron">
             <div className="container">
                 <h1>Equivalent Salary Converter Using PPP!</h1>
@@ -14,25 +34,21 @@ function Main(){
                         <label htmlFor="from" style={{fontWeight: "bold"}} className="col-4 col-form-label">Current Country</label> 
                         <div className="col-8">
                         <select id="from" name="from" className="custom-select" required="required">
-                            <option value="rabbit">Rabbit</option>
-                            <option value="duck">Duck</option>
-                            <option value="fish">Fish</option>
+                            {Object.keys(countries).map(key => <option value={key}>{countries[key]}</option>)}
                         </select>
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label className="col-4 col-form-label" style={{fontWeight: "bold"}} >Current Salary</label> 
+                        <label className="col-4 col-form-label" style={{fontWeight: "bold"}} >Current Salary (in {data.currency && data.currency.from})</label> 
                         <div className="col-8">
-                        <input id="text" name="text" type="text" className="form-control"></input>
+                        <input id="text" name="text" type="text" value={salary} className="form-control"></input>
                         </div>
                     </div>
                     <div className="form-group row">
                         <label  className="col-4 col-form-label" style={{fontWeight: "bold"}} >Target Country</label> 
                         <div className="col-8">
-                        <select id="to" name="to" className="custom-select">
-                            <option value="rabbit">Rabbit</option>
-                            <option value="duck">Duck</option>
-                            <option value="fish">Fish</option>
+                        <select id="to" name="to" value={to} className="custom-select">
+                        {Object.keys(countries).map(key => <option value={key}>{countries[key]}</option>)}
                         </select>
                         </div>
                     </div> 
@@ -42,10 +58,9 @@ function Main(){
                         </div>
                     </div>
                 </form>
-                
             </div>      
+
         </div>
-        </>
     )
 }
 

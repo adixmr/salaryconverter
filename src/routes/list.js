@@ -4,11 +4,13 @@ const ppp = require('../data/final.json')
 
 router.get('/', async (req, res) => {
     try {
+        let p = {};
+
         Object.keys(ppp).map((key) => {
-            ppp[key] = ppp[key]['country']
+            p[key] = ppp[key]['country']
         })
 
-        res.json(ppp)   ;
+        res.json(p)   ;
     } catch (err) {
         console.error(err.message);
         res.json({error: 'There is some error with your request'})
