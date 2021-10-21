@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <Navbar />
-    <Main />
+    <Main from='IN' to='US' amount='100000'/>
     <Footer />
     </>
   );
