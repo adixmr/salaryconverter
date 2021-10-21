@@ -30,7 +30,7 @@ router.get('/:from/:to', async (req, res) => {
         
         res.json(result);
     } catch (err) {
-        console.error(err.message);
+        console.error(err);
         res.json({error: 'There is some error with your request'})
     }
 })

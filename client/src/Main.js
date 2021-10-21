@@ -11,9 +11,11 @@ const Main = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            setLoading(true)
-            let countries = await axios.get('/list')
-            let data = await axios.get('/api/'+from+'/'+to)
+            let proxy = '' //Replace with your production API base URL if deploying on a server
+                           //Otherwise default localhost:3001 will be taken from package.json
+            setLoading(true) 
+            let countries = await axios.get(proxy+'/list')
+            let data = await axios.get(proxy+'/api/'+from+'/'+to)
             setCountries(countries.data)
             setData(data.data)
             setLoading(false)
@@ -38,7 +40,7 @@ const Main = () => {
                         <label htmlFor="from" style={{fontWeight: "bold"}} className="col-4 col-form-label">Current Country</label> 
                         <div className="col-8">
                         <select id="from" name="from" onChange={handleFrom} className="custom-select" required="required">
-                            {Object.keys(countries).map(key => <option value={key}>{countries[key]}</option>)}
+                            {Object.keys(countries).map(key => <option key={key} value={key}>{countries[key]}</option>)}
                         </select>
                         </div>
                     </div>
@@ -52,28 +54,27 @@ const Main = () => {
                         <label  className="col-4 col-form-label" style={{fontWeight: "bold"}} >Target Country</label> 
                         <div className="col-8">
                         <select id="to" name="to" onChange={handleTo} value={to} className="custom-select">
-                        {Object.keys(countries).map(key => <option value={key}>{countries[key]}</option>)}
+                        {Object.keys(countries).map(key => <option key={key} value={key}>{countries[key]}</option>)}
                         </select>
                         </div>
                     </div> 
                 </form>
                 { !loading &&
                     <div className="text-center mt-5 alert alert-info" role="alert">You need to make <strong>{data.conversion && data.conversion.factor.toFixed(2)}x</strong> the amount when you move from <strong>{data.country && data.country.from}</strong> to <strong>{data.country && data.country.to}.</strong> 
-                    <br/>
-                    i.e. <strong> {data.currency && data.currency.from} {data.conversion && (data.conversion.factor*salary).toFixed(2)}</strong> which is equal to <strong>  {data.currency && data.currency.to}  {data.conversion && (data.conversion.direct*salary).toFixed(2)}</strong>
+                    <br/><br/>
+                    i.e. <strong> {data.currency && data.currency.from} {data.conversion && (data.conversion.factor*salary).toFixed(2)}</strong> which is equal to <strong>  {data.currency && data.currency.to}  {data.conversion && (data.conversion.factor*data.conversion.direct*salary).toFixed(2)}</strong>
                     </div>
                 }
                 {
                     loading &&
                     <div className="text-center">
                         <button className="mt-5 btn btn-primary" type="button" disabled>
-                        <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        <span className="mr-1 spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                         Loading...
                         </button>
                     </div>
                 }   
             </div>      
-
         </div>
     )
 }

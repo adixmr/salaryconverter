@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "proxy": "http://127.0.0.1:3001",
   "dependencies": {
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.23.0",
     "bootstrap-icons": "^1.6.1",
+    "dotenv": "^10.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",

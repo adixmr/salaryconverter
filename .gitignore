@@ -1,3 +1,5 @@
 node_modules
 .env
 *.php
+client/build
+client/node_modules
