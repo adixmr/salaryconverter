@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 const axios = require('axios')
 
 const Main = () => {
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading]     = useState(true)
     const [countries, setCountries] = useState({})
-    const [from, setFrom] = useState('IN')
-    const [to, setTo] = useState('US')
-    const [salary, setSalary] = useState('100000')
-    const [data, setData] = useState({})
+    const [from, setFrom]           = useState('IN')
+    const [to, setTo]               = useState('US')
+    const [salary, setSalary]       = useState('100000')
+    const [data, setData]           = useState({})
 
     useEffect(() => {
         const fetchData = async () => {
@@ -60,10 +60,11 @@ const Main = () => {
                     </div> 
                 </form>
                 { !loading &&
-                    <div className="text-center mt-5 alert alert-info" role="alert">You need to make <strong>{data.conversion && data.conversion.factor.toFixed(2)}x</strong> the amount when you move from <strong>{data.country && data.country.from}</strong> to <strong>{data.country && data.country.to}.</strong> 
-                    <br/><br/>
-                    i.e. <strong> {data.currency && data.currency.from} {data.conversion && (data.conversion.factor*salary).toFixed(2)}</strong> which is equal to <strong>  {data.currency && data.currency.to}  {data.conversion && (data.conversion.factor*data.conversion.direct*salary).toFixed(2)}</strong>
+                    <div className="text-center mt-5 alert alert-info" role="alert">According to PPP, a salary of <strong> {data.currency && data.currency.from} {data.conversion && salary}</strong> in <strong>{data.country && data.country.from}</strong> is equivalent to <strong> {data.currency && data.currency.from} {data.conversion && (data.conversion.factor*salary).toFixed(2)}</strong> or <strong>  {data.currency && data.currency.to}  {data.conversion && (data.conversion.factor*data.conversion.direct*salary).toFixed(2)}</strong> in <strong>{data.country && data.country.to}.</strong> 
+                    <br/>
+                    That's <strong>{data.conversion && data.conversion.factor.toFixed(2)}x</strong> times the amount you make in <strong>{data.country && data.country.from}</strong>
                     </div>
+                    
                 }
                 {
                     loading &&
@@ -74,7 +75,10 @@ const Main = () => {
                         </button>
                     </div>
                 }   
-            </div>      
+            </div>
+            <div class="container mt-5 text-center">
+                <p><strong>Disclaimer:</strong> This tool is made to give a general idea between the purchasing power of currencies in different countries, it uses Purchasing Power Parity (PPP) data for the calculation and doesn't take cost of living index (by city) into the consideration.<br/> <br/> Read more about PPP and how it's calculated here: <a target="_blank" href="https://www.oecd.org/sdd/prices-ppp/purchasingpowerparities-frequentlyaskedquestionsfaqs.htm">PPP Faqs at OECD</a></p>
+            </div>
         </div>
     )
 }

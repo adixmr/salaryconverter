@@ -18,7 +18,7 @@ router.get('/:from/:to', async (req, res) => {
                 to:     ppp[to]['currency_code']
             }, 
             conversion: {
-                direct: conversion.data.data[ppp[to]['currency_code']],
+                direct: from!=to ? conversion.data.data[ppp[to]['currency_code']] : 1,
                 get reverse() {
                     return 1/this.direct;
                 },
