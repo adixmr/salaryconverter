@@ -33,7 +33,7 @@ const Main = () => {
     };
 
     fetchData();
-  }, [from, to]);
+  }, [from, to, salary]);
 
   const handleTo = (e) => setTo(e.target.value);
   const handleFrom = (e) => setFrom(e.target.value);
@@ -161,7 +161,7 @@ const Main = () => {
             </button>
           </div>
         )}
-        {error && (
+        {!loading && error && (
           <div class="alert alert-danger text-center" role="alert">
             Something went wrong. Please try again later.
           </div>
