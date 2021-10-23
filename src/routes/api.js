@@ -5,10 +5,10 @@ const ppp = require('../data/final.json')
 
 router.get('/:from/:to', async (req, res) => {
     try {
-        let from        = req.params.from;
-        let to          = req.params.to;
-        let conversion  = await axios.get(`https://freecurrencyapi.net/api/v2/latest?apikey=${process.env.CURRENCY_KEY}&base_currency=`+ppp[from]['currency_code'])
-        let result = {
+        const from        = req.params.from;
+        const to          = req.params.to;
+        const conversion  = await axios.get(`https://freecurrencyapi.net/api/v2/latest?apikey=${process.env.CURRENCY_KEY}&base_currency=`+ppp[from]['currency_code'])
+        const result = {
             country : {
                 from:   ppp[from]['country'],
                 to:     ppp[to]['country']
@@ -31,7 +31,10 @@ router.get('/:from/:to', async (req, res) => {
         res.json(result);
     } catch (err) {
         console.error(err);
-        res.json({error: 'There is some error with your request'})
+        return res.status(400).send({
+            status: false,
+            message: 'Oops! Something went wrong. Please try again later.'
+        });
     }
 })
 
