@@ -22,7 +22,7 @@ const Main = () => {
       setCountries(countries.data);
 
       try {
-        const { data } = await axios.get(`${proxy}/api/${from}/to`);
+        const { data } = await axios.get(`${proxy}/api/${from}/${to}`);
         setData(data);
       } catch (error) {
         setError(true);
@@ -33,7 +33,7 @@ const Main = () => {
     };
 
     fetchData();
-  }, [from, to, salary]);
+  }, [from, to]);
 
   const handleTo = (e) => setTo(e.target.value);
   const handleFrom = (e) => setFrom(e.target.value);
