@@ -1,7 +1,6 @@
 const router = require('express')();
 const ppp = require('../data/final.json')
 
-
 router.get('/', async (req, res) => {
     try {
         let p = {};
@@ -10,10 +9,13 @@ router.get('/', async (req, res) => {
             p[key] = ppp[key]['country']
         })
 
-        res.json(p)   ;
+        res.json(p);
     } catch (err) {
         console.error(err.message);
-        res.json({error: 'There is some error with your request'})
+        return res.status(400).send({
+            status: false,
+            message: 'Oops! Something went wrong. Please try again later.'
+        });
     }
 })
 
