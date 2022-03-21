@@ -7,7 +7,7 @@ router.get('/:from/:to', async (req, res) => {
     try {
         const from        = req.params.from;
         const to          = req.params.to;
-        const conversion  = await axios.get(`https://freecurrencyapi.net/api/v2/latest?apikey=${process.env.CURRENCY_KEY}&base_currency=`+ppp[from]['currency_code'])
+        const conversion  = await axios.get(`https://currencyapi.com/api/v2/latest?apikey=${process.env.CURRENCY_KEY}&base_currency=`+ppp[from]['currency_code'])
         const result = {
             country : {
                 from:   ppp[from]['country'],
