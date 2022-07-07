@@ -1,13 +1,21 @@
 const router = require('express')();
 const axios = require('axios')
 const ppp = require('../data/final.json')
-
+const conversion = require('./conversion.json')
+const fs = require("fs");
 
 router.get('/:from/:to', async (req, res) => {
     try {
         const from        = req.params.from;
         const to          = req.params.to;
-        const conversion  = await axios.get(`https://currencyapi.com/api/v2/latest?apikey=${process.env.CURRENCY_KEY}&base_currency=`+ppp[from]['currency_code'])
+        let stats =  fs.statSync('./src/routes/conversion.json');
+
+
+        if((Date.now() - stats.mtimeMs)/1000 > 10000){
+            let currencyRates = await axios.get(`https://currencyapi.com/api/v2/latest?apikey=${process.env.CURRENCY_KEY}`)
+            fs.writeFileSync('./src/routes/conversion.json', JSON.stringify(currencyRates.data));
+        }
+
         const result = {
             country : {
                 from:   ppp[from]['country'],
@@ -18,7 +26,7 @@ router.get('/:from/:to', async (req, res) => {
                 to:     ppp[to]['currency_code']
             }, 
             conversion: {
-                direct: from!=to ? conversion.data.data[ppp[to]['currency_code']] : 1,
+                direct: from!=to ? conversion.data[ppp[to]['currency_code']]/conversion.data[ppp[from]['currency_code']] : 1,
                 get reverse() {
                     return 1/this.direct;
                 },
